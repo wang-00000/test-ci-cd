@@ -11,7 +11,6 @@ pipeline {
         MAVEN_OPTS = "-Dmaven.repo.local=/var/jenkins_home/.m2/repository"
         IMAGE_NAME = "test-ci-cd"
         IMAGE_TAG  = "${BUILD_NUMBER}"
-        DOCKER_HOST = "tcp://host.docker.internal:2375"
     }
 
     stages {
