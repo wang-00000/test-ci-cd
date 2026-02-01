@@ -3,8 +3,7 @@ pipeline {
 
     tools {
         // Jenkins 全局工具里配置过的 Maven 名称
-        maven 'Maven-3.8.8'
-        jdk 'JDK-8'
+        maven 'maven3'
     }
 
     environment {
