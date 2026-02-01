@@ -17,9 +17,9 @@ pipeline {
     stages {
 
         stage('Checkout') {
-            steps {
-                checkout scm
-            }
+          steps {
+            git url: 'https://github.com/wang-00000/test-ci-cd.git', branch: 'main'
+          }
         }
 
         stage('Build') {
