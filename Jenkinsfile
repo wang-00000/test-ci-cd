@@ -44,7 +44,7 @@ pipeline {
                 docker rm -f test-ci-cd || true
                 docker run -d \
                   --name test-ci-cd \
-                  -p 9001:8080 \
+                  -p 9001:9001 \
                   test-ci-cd:${IMAGE_TAG}
                 '''
             }
